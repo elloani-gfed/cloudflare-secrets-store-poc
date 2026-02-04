@@ -12,9 +12,9 @@
     },
     "secrets_store_secrets": [
       {
-        "binding": "ACCOUNT_SECRET",
+        "binding": "my-secret-store",
         "store_id": "8a4d1d39121149e1bdaf055e07029191",
-        "secret_name": "my-secret-store"
+        "secret_name": "TEST_API_KEY"
       }
     ]
   }

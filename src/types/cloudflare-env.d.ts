@@ -2,7 +2,7 @@ export {};
 
 declare global {
   interface CloudflareEnv {
-    ACCOUNT_SECRET?: {
+    "my-secret-store"?: {
       get(): Promise<string>;
     };
   }

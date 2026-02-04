@@ -2,10 +2,11 @@ import { getCloudflareContext } from "@opennextjs/cloudflare";
 
 export async function getAccountSecret(): Promise<string | null> {
   const { env } = await getCloudflareContext({ async: true });
+  const secretBinding = env["my-secret-store"];
 
-  if (!env.ACCOUNT_SECRET) {
+  if (!secretBinding) {
     return null;
   }
 
-  return env.ACCOUNT_SECRET.get();
+  return secretBinding.get();
 }

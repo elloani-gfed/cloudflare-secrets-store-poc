@@ -25,8 +25,8 @@ export default async function Home() {
             Cloudflare Secrets Store is wired up.
           </h1>
           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Secret binding <span className="font-medium">ACCOUNT_SECRET</span>{" "}
-            status: <span className="font-medium">{secretStatus}</span>
+            Secrets:
+            <span className="font-medium">{secretStatus}</span>
           </p>
           <p className="max-w-md text-sm leading-6 text-zinc-500 dark:text-zinc-400">
             The value is read on the server via the Cloudflare Workers
