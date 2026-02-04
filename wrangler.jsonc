@@ -9,5 +9,12 @@
     "assets": {
       "directory": ".open-next/assets",
       "binding": "ASSETS"
-    }
+    },
+    "secrets_store_secrets": [
+      {
+        "binding": "ACCOUNT_SECRET",
+        "store_id": "8a4d1d39121149e1bdaf055e07029191",
+        "secret_name": "my-secret-store"
+      }
+    ]
   }
